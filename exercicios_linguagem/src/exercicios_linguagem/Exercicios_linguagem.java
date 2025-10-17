@@ -1,20 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package exercicios_linguagem;
 
-/**
- *
- * @author aluno
- */
+import java.awt.Menu;
+
 public class Exercicios_linguagem {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void Menu(){
+        System.out.println("Teste");
     }
     
+    public static void main(String[] args) {
+        
+        Menu();
+        
+    }
+
 }
