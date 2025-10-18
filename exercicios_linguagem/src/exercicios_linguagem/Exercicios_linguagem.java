@@ -2,7 +2,6 @@ package exercicios_linguagem;
 
 import java.util.Scanner;
 
-
 public class Exercicios_linguagem {
 
     public static void Menu() {
@@ -17,7 +16,7 @@ public class Exercicios_linguagem {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int opc = 0;
-        do {            
+        do {
             Menu();
             opc = sc.nextInt();
             switch (opc) {
@@ -35,18 +34,21 @@ public class Exercicios_linguagem {
                     System.out.println("Digite o celsius: ");
                     double celsius = sc.nextDouble();
                     System.out.println("Fahrenheigt: " + ConversorTemperatura.celciusParaFahrenheit(celsius));
-                    break;      
-                case 4:   
-                    
                     break;
-                case 5:   
+                case 4:
+                    System.out.println("Digite o Primeiro nome: ");
+                    String primeiroNome = sc.next();
+                    System.out.println("Digite o Primeiro nome: ");
+                    String sobrenome = sc.next();
+                    System.out.println("Nome Completo: " + FormatadorNome.montarNomeCompleto(primeiroNome, sobrenome));
+                    break;
+                case 5:
                     break;
                 default:
                     break;
-               
+
             }
         } while (opc != 5);
-        
 
     }
 
