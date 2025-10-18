@@ -22,18 +22,22 @@ public class Exercicios_linguagem {
             opc = sc.nextInt();
             switch (opc) {
                 case 1:
-                    System.out.println("Ensira a idade: ");
+                    System.out.println("Digite a idade: ");
                     int idade = sc.nextInt();
                     System.out.println(VerificadorVoto.podeVotar(idade));
                     break;
                 case 2:
-                    System.err.println("Ensira o lado: ");
+                    System.out.println("Digite o lado: ");
                     double lado = sc.nextDouble();
-                    System.err.println("Area: " + CalculadoraGeometrica.calcularAreaQuadrado(lado));
+                    System.out.println("Area: " + CalculadoraGeometrica.calcularAreaQuadrado(lado));
                     break;
-                case 3:   
+                case 3:
+                    System.out.println("Digite o celsius: ");
+                    double celsius = sc.nextDouble();
+                    System.out.println("Fahrenheigt: " + ConversorTemperatura.celciusParaFahrenheit(celsius));
                     break;      
                 case 4:   
+                    
                     break;
                 case 5:   
                     break;
